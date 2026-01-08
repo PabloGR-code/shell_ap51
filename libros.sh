@@ -11,19 +11,19 @@ read -p "Elige una opcion" opcion
 case $opcion in
     1) 
         read -p "Introduce el título a buscar: " busqueda
-        grep "busqueda" "bdlibros.txt"
+        grep "$busqueda" "bdlibros.txt"
         ;;
     2)
         read -p "Introduce el ano a buscar: " busqueda
-        grep "busqueda" "bdlibros.txt"
+        grep "$busqueda" "bdlibros.txt"
         ;;
     3)
         read -p "Introduce la editorial a buscar: " busqueda
-        grep "busqueda" "bdlibros.txt"
+        grep "$busqueda" "bdlibros.txt"
         ;;
     4)
         read -p "Introduce el genero a buscar: " busqueda
-        grep "busqueda" "bdlibros.txt"
+        grep "$busqueda" "bdlibros.txt"
         ;;
     5)
         ./libros-anyadir.sh
